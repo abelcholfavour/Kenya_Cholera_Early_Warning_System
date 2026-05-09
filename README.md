@@ -1,1 +1,1 @@
-# Kenya_Cholera_Early_Warning_System
+# Kenya Cholera Early Warning System
