@@ -1,0 +1,14 @@
+Field,Label,Value
+created,Created,2023-03-13T23:14:16.876167
+description,Description,IFRC Appeals data
+format,File Format,CSV
+download_url,Download URL,https://data.humdata.org/dataset/338d5e96-10bd-4932-94e0-37cb005a924c/resource/a7633579-55fd-46ac-8d36-e72ad3fecbaf/download/appeals_data_ken.csv
+id,Resource ID,a7633579-55fd-46ac-8d36-e72ad3fecbaf
+last_modified,Updated,2026-05-08T10:47:41.366869
+metadata_modified,Metadata Updated,2026-05-08T10:47:43.118897
+microdata,Microdata,False
+dataset_id,Dataset ID,338d5e96-10bd-4932-94e0-37cb005a924c
+resource_type,Resource Type,file.upload
+name,Resource Name,IFRC Appeals Data for Kenya
+mimetype,MIME Type,
+size,Size,42.3K
