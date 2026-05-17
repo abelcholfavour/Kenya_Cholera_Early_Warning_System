@@ -1,0 +1,7 @@
+streamlit
+pandas
+folium
+streamlit-folium
+numpy>=1.26.0
+pyarrow>=14.0.0
+setuptools
