@@ -5,7 +5,7 @@
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 1. [Executive Summary & Problem Statement](#1-executive-summary--problem-statement)
 2. [Project Innovation & Benchmarks](#2-project-innovation--benchmarks)
 3. [Data Architecture & Sources](#3-data-architecture--sources)
