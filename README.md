@@ -22,7 +22,7 @@
 ---
 
 ## 1. Executive Summary & Problem Statement
-
+Explore the interactive outbreak trends via our Tableau Dashboard (https://public.tableau.com/authoring/K-CEWS/Dashboard1#1)
 ### The Current Failure: Reactive Surveillance
 
 Currently, epidemiological surveillance in Kenya relies on the Integrated Disease Surveillance and Response (IDSR) framework. While robust for tracking, it suffers from three critical failures:
@@ -119,10 +119,10 @@ The system evaluates multiple algorithms to handle epidemiological overdispersio
 
 *(Located in `app.py`)*
 
-
-
 The Streamlit frontend is engineered as a high-availability dashboard for Sub-County Health Management Teams.
 
+### Tableau Storytelling
+Complementing the Streamlit app, the [Tableau Dashboard](https://public.tableau.com/authoring/K-CEWS/Dashboard1#1) provides interactive visuals for outbreak trends, climate drivers, and risk scores.
 
 
 ### Key Features:
