@@ -9,13 +9,13 @@ precision,recall,f1-score,support,Model,Metric_Type
 0.66,0.66,0.66,0.66,Decision Tree,accuracy
 0.654,0.663,0.653,13032.0,Decision Tree,macro avg
 0.681,0.66,0.665,13032.0,Decision Tree,weighted avg
-0.766,0.738,0.752,8064.0,Random Forest,0
-0.598,0.634,0.615,4968.0,Random Forest,1
-0.698,0.698,0.698,0.698,Random Forest,accuracy
-0.682,0.686,0.683,13032.0,Random Forest,macro avg
-0.702,0.698,0.7,13032.0,Random Forest,weighted avg
-0.879,0.426,0.574,8064.0,K-CEWS (Optimized XGBoost),0
-0.493,0.905,0.638,4968.0,K-CEWS (Optimized XGBoost),1
-0.608,0.608,0.608,0.608,K-CEWS (Optimized XGBoost),accuracy
-0.686,0.665,0.606,13032.0,K-CEWS (Optimized XGBoost),macro avg
-0.732,0.608,0.598,13032.0,K-CEWS (Optimized XGBoost),weighted avg
+0.765,0.736,0.75,8064.0,Random Forest,0
+0.596,0.633,0.614,4968.0,Random Forest,1
+0.697,0.697,0.697,0.697,Random Forest,accuracy
+0.681,0.685,0.682,13032.0,Random Forest,macro avg
+0.701,0.697,0.698,13032.0,Random Forest,weighted avg
+0.877,0.43,0.577,8064.0,K-CEWS (Optimized XGBoost),0
+0.494,0.902,0.638,4968.0,K-CEWS (Optimized XGBoost),1
+0.61,0.61,0.61,0.61,K-CEWS (Optimized XGBoost),accuracy
+0.686,0.666,0.608,13032.0,K-CEWS (Optimized XGBoost),macro avg
+0.731,0.61,0.6,13032.0,K-CEWS (Optimized XGBoost),weighted avg
