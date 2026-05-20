@@ -1,5 +1,5 @@
-# 🇰🇪 Kenya Cholera Early Warning System (K-CEWS)
-**PROMAX Edition: AI-Driven Predictive Surveillance & Logistics Command**
+# Kenya Cholera Early Warning System (K-CEWS)
+**AI-Driven Predictive Surveillance for Proactive Sub-County Intervention**
 
 ![K-CEWS Cover](Image/coverImg.png)
 
@@ -116,7 +116,7 @@ The system evaluates multiple algorithms to handle epidemiological overdispersio
 
 
 
-## 5. The ProMax Command Center (Streamlit App)
+## 5. The Visual Center (Streamlit App)
 
 *(Located in `app.py`)*
 
