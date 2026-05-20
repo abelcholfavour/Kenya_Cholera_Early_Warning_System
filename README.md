@@ -9,20 +9,22 @@
 
 ## Table of Contents
 
-1. [Executive Summary & Problem Statement](#1-executive-summary--problem-statement)
-2. [Project Innovation & Benchmarks](#2-project-innovation--benchmarks)
-3. [Data Architecture & Sources](#3-data-architecture--sources)
-4. [Machine Learning & Data Engineering Pipeline](#4-machine-learning--data-engineering-pipeline)
-5. [The ProMax Command Center (Streamlit App)](#5-the-promax-command-center-streamlit-app)
-6. [Project Success Metrics](#6-project-success-metrics)
-7. [Ethical Considerations & Governance](#7-ethical-considerations--governance)
-8. [Complete Project Structure](#8-complete-project-structure)
-9. [Project Team](#9-project-team)
+1. [Introduction & Project Foundation]
+2. [Literature Review & Strategic Benchmarking]
+3. [Methodology & Technical Framework]
+4. [Exploratory Data Analysis & Feature Ingestion]
+5. [Machine Learning Architecture & Optimization]
+6. [System Architecture & Deployment Framework]
+7. [Evaluation & Success Metrics]
+8. [Ethical Governance & Risk Mitigation]
+9. [Conclusion & Recommendations]
+10. [Appendices & Bibiliography]
+9. [Project Team]
 
 ---
 
 ## 1. Executive Summary & Problem Statement
-Explore the interactive outbreak trends via our Tableau Dashboard (https://public.tableau.com/authoring/K-CEWS/Dashboard1#1)
+Explore the interactive outbreak trends via our Tableau Dashboard (https://public.tableau.com/app/profile/patience.diana/viz/K-CEWS/Story1)
 ### The Current Failure: Reactive Surveillance
 
 Currently, epidemiological surveillance in Kenya relies on the Integrated Disease Surveillance and Response (IDSR) framework. While robust for tracking, it suffers from three critical failures:
@@ -107,8 +109,7 @@ The system evaluates multiple algorithms to handle epidemiological overdispersio
 
 3.  **Optimized XGBoost (Production Engine):** Uses `scale_pos_weight=10` to heavily penalize the model for missing an outbreak, prioritizing **100% Outbreak Recall (Sensitivity)**.
 
-4.  **Explainable AI (SHAP):** Transitions the model from a "Black Box" to a transparent tool, showing which variables drive risk scores.
-
+4.  **Decision Tree:** provides feature importance rankings and decision pathways that local health teams can understand without AI expertise
 
 
 ---
@@ -121,8 +122,11 @@ The system evaluates multiple algorithms to handle epidemiological overdispersio
 
 The Streamlit frontend is engineered as a high-availability dashboard for Sub-County Health Management Teams.
 
+[StreamliteApp](https://kenyacholeraearlywarningsystem-hjgbvn8ghqpvex4fcxcykj.streamlit.app/)
+
 ### Tableau Storytelling
-Complementing the Streamlit app, the [Tableau Dashboard](https://public.tableau.com/authoring/K-CEWS/Dashboard1#1) provides interactive visuals for outbreak trends, climate drivers, and risk scores.
+Complementing the Streamlit app, the [Tableau Dashboard](https://public.tableau.com/app/profile/patience.diana/viz/K-CEWS/Story1) provides interactive visuals for outbreak trends, climate drivers, and risk scores.
+
 
 
 ### Key Features:
