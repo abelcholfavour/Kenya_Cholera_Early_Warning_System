@@ -116,7 +116,7 @@ The system evaluates multiple algorithms to handle epidemiological overdispersio
 
 
 
-## 5. The ProMax Command Center (Streamlit App)
+## 5. The Visual Center (Streamlit App)
 
 *(Located in `app.py`)*
 
