@@ -1,5 +1,5 @@
-# 🇰🇪 Kenya Cholera Early Warning System (K-CEWS)
-**PROMAX Edition: AI-Driven Predictive Surveillance & Logistics Command**
+# Kenya Cholera Early Warning System (K-CEWS)
+**AI-Driven Predictive Surveillance for Proactive Sub-County Intervention**
 
 ![K-CEWS Cover](Image/coverImg.png)
 
