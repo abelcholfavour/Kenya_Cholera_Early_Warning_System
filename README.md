@@ -117,8 +117,22 @@ K-CEWS is engineered to comply fully with the **Kenya Data Protection Act of 201
 * **Surveillance Equity:** Integrates baseline demographic indices so that areas with lower clinical reporting rates remain fully visible to the predictive model, preventing regional gaps in resource routing.
 
 
+## **8. Project Team & Task Force**
 
-## 8. Complete Repository Structure
+The **Kenya Cholera Early Warning System (K-CEWS)** was engineered and deployed by a dedicated cross-functional task force from **Moringa School, Nairobi, Kenya**, bringing together expertise across data engineering, predictive modeling, geospatial analysis, and user-experience design.
+
+### **Task Force Breakdown**
+
+| Name & Profile | Strategic Project Role | Core Architectural Responsibilities |
+| :--- | :--- | :--- |
+| **Abel Aleu Chol Garang** | **Project Lead & UI Developer** | Overall system architecture layout, end-to-end multi-page session state management, and implementation of the Streamlit live command dashboard interface. |
+| **Augustine Magani** | **Technical Researcher** | Strategic data sourcing, historic case literature benchmarking, global framework review, and statutory public policy documentation. |
+| **Patience Chepkosgei** | **Data Analyst** | Comprehensive geospatial exploratory data profiling, feature-to-target mapping, and orchestration of the interactive executive Tableau Storyboard. |
+| **Carolyne Githenduka** | **Data Engineer** | Automated extraction pipelines for raw NASA weather files, data cleaning layers, and implementation of the critical $t-14$ chronological feature lag shifts. |
+| **Marcus Kaula** | **Machine Learning Engineer** | Construction of the model evaluation tournament framework across all four analytical families, synthetic data balancing (SMOTE), and XGBoost champion engine tuning. |
+
+
+## 9. Complete Repository Structure
 
 ```text
 Kenya_Cholera_Early_Warning_System/
@@ -147,16 +161,4 @@ Kenya_Cholera_Early_Warning_System/
 ├── Presentation.pdf                      # Stakeholder and project pitch deck
 ├── README.md                             # Project documentation (This file)
 └── requirements.txt                      # Application dependencies and Python packages
-## **9. Project Team & Task Force**
 
-The **Kenya Cholera Early Warning System (K-CEWS)** was engineered and deployed by a dedicated cross-functional task force from **Moringa School, Nairobi, Kenya**, bringing together expertise across data engineering, predictive modeling, geospatial analysis, and user-experience design.
-
-### **Task Force Breakdown**
-
-| Name & Profile | Strategic Project Role | Core Architectural Responsibilities |
-| :--- | :--- | :--- |
-| **Abel Aleu Chol Garang** | **Project Lead & UI Developer** | Overall system architecture layout, end-to-end multi-page session state management, and implementation of the Streamlit live command dashboard interface. |
-| **Augustine Magani** | **Technical Researcher** | Strategic data sourcing, historic case literature benchmarking, global framework review, and statutory public policy documentation. |
-| **Patience Chepkosgei** | **Data Analyst** | Comprehensive geospatial exploratory data profiling, feature-to-target mapping, and orchestration of the interactive executive Tableau Storyboard. |
-| **Carolyne Githenduka** | **Data Engineer** | Automated extraction pipelines for raw NASA weather files, data cleaning layers, and implementation of the critical $t-14$ chronological feature lag shifts. |
-| **Marcus Kaula** | **Machine Learning Engineer** | Construction of the model evaluation tournament framework across all four analytical families, synthetic data balancing (SMOTE), and XGBoost champion engine tuning. |
