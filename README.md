@@ -1,228 +1,163 @@
 # Kenya Cholera Early Warning System (K-CEWS)
 **AI-Driven Predictive Surveillance for Proactive Sub-County Intervention**
 
-![K-CEWS Cover](Image/coverImg.png)
+![K-CEWS Cover](image/coverImg.png)
 
-> *"In public health, time is the only currency that matters. A 24-hour delay in response can result in an exponential surge in infections; a 14-day head start can save a city."*
+> *Transitioning clinical workflows from a state of reactive crisis response to proactive, anticipatory mitigation. A 14-day structural head start turns emergency logistics into a calculated containment strategy.*
 
----
-
-## Table of Contents
-
-1. [Introduction & Project Foundation]
-2. [Literature Review & Strategic Benchmarking]
-3. [Methodology & Technical Framework]
-4. [Exploratory Data Analysis & Feature Ingestion]
-5. [Machine Learning Architecture & Optimization]
-6. [System Architecture & Deployment Framework]
-7. [Evaluation & Success Metrics]
-8. [Ethical Governance & Risk Mitigation]
-9. [Conclusion & Recommendations]
-10. [Appendices & Bibiliography]
-9. [Project Team]
-
----
-
-## 1. Executive Summary & Problem Statement
-Explore the interactive outbreak trends via our Tableau Dashboard (https://public.tableau.com/app/profile/patience.diana/viz/K-CEWS/Story1)
-### The Current Failure: Reactive Surveillance
-
-Currently, epidemiological surveillance in Kenya relies on the Integrated Disease Surveillance and Response (IDSR) framework. While robust for tracking, it suffers from three critical failures:
-
-1.  **The Lag Gap:** Systems trigger only after patients arrive at clinics, creating a 10–14 day "Reactive Lag" between environmental contamination and public health response.
-
-2.  **Resource Inefficiency:** Supplies are deployed after "Case Spikes," meaning resources often arrive *after* the peak of the transmission curve.
-
-3.  **Data Silos:** Environmental data (NASA), health data (WHO), and demographic data (KNBS) exist in isolation, preventing a holistic understanding of risk.
+[![Repository Link](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/abelcholfavour/Kenya_Cholera_Early_Warning_System/tree/main)
+[![Streamlit App](https://img.shields.io/badge/Streamlit-App-FF4B4B?style=for-the-badge&logo=Streamlit)](https://kenyacholeraearlywarningsystem-hjgbvn8ghqpvex4fcxcykj.streamlit.app/)
+[![Tableau Dashboard](https://img.shields.io/badge/Tableau-Dashboard-E97627?style=for-the-badge&logo=Tableau)](https://public.tableau.com/app/profile/patience.diana/viz/K-CEWS/Story1)
 
 
+## **Table of Contents**
 
-### The K-CEWS Solution
-
-K-CEWS utilizes spatiotemporal machine learning to bridge the gap between "Climate Shocks" and the biological transmission cycle of *Vibrio cholerae*. By implementing **Feature Lagging (t-14 days)**, K-CEWS acts as a "Sentinel" that looks 14 days into the future, empowering the Ministry of Health to pre-position Oral Cholera Vaccines (OCV) and medical supplies before an outbreak peaks.
-
-
-
----
-
-
-
-## 2. Project Innovation & Benchmarks
-
-K-CEWS addresses specific technical "Blind Spots" identified in regional and global frameworks:
-
-* **vs. NASA-UNICEF Yemen Project:** Overcame the "War-Data Gap" by utilizing Kenya's highly stable KHIS/DHIS2 reporting systems for superior model verification.
-
-* **vs. Ethiopia Infrastructure-Dependent Model:** K-CEWS is infrastructure-independent, leveraging NASA remote sensing to maintain 100% visibility even without physical sentinel sites.
-
-* **vs. Kenya Red Cross sEAP Protocol:** Automates manual rain gauge checks using continuous API and satellite data feeds via an XGBoost engine.
-
-* **vs. Nigeria ML Studies:** Introduces the crucial **14-Day Lead Time**, moving beyond predicting the *current* week to providing a true actionable foresight window.
+1. [Executive Summary & Problem Statement](#1-executive-summary--problem-statement)
+2. [Project Innovation & Benchmarks](#2-project-innovation--benchmarks)
+3. [Data Architecture & Sources](#3-data-architecture--sources)
+4. [Machine Learning & Data Engineering Pipeline](#4-machine-learning--data-engineering-pipeline)
+5. [The K-CEWS Interactivity Framework](#5-the-k-cews-interactivity-framework)
+6. [Project Success Metrics](#6-project-success-metrics)
+7. [Ethical Considerations & Governance](#7-ethical-considerations--governance)
+8. [Complete Repository Structure](#8-complete-repository-structure)
+9. [Project Team & Task Force](#9-project-team--task-force)
 
 
+## **1. Executive Summary & Problem Statement**
 
----
+### **The Critical Issue: Reactive Surveillance**
+Epidemiological monitoring in Kenya under the Integrated Disease Surveillance and Response (IDSR) framework triggers alerts only *after* infected patients visit health clinics. This introduces a **10–14 day reactive lag** between environmental water contamination and real-world deployment. Consequently, vital supplies like Oral Cholera Vaccines (OCV) are distributed defensively after case spikes have already climbed, often missing the peak transmission containment window.
 
-
-
-## 3. Data Architecture & Sources
-
-The system integrates four isolated data streams into a continuous geographic time-series dataset spanning a 10-year period (2015-2025):
-
+### **The K-CEWS Solution**
+K-CEWS bridges this gap by mapping regional hydro-climatic anomalies directly onto the biological timeline of *Vibrio cholerae*. By implementing a **14-day chronological feature lag ($t-14$)**, the system acts as an automated predictive sentinel looking two weeks into the future. This grants the Ministry of Health and local logistics management teams a vital window to pre-position water-treatment assets before outbreaks manifest clinically.
 
 
-| Data Stream | Source | Parameters | Strategic Importance |
+## **2. Project Innovation & Benchmarks**
+
+K-CEWS addresses systemic blind spots found in traditional global and regional surveillance networks:
+
+* **The Science of Predictive Surveillance:** *Vibrio cholerae* proliferation spikes under clear hydro-climatic conditions: high surface temperatures, elevated humidity, and heavy rainfall anomalies (**NASA IMERG Precipitation**) that wash contaminants into unprotected local water systems. K-CEWS captures this 14-day biological incubation window to generate actionable alerts.
+* **vs. NASA-UNICEF Yemen Project:** Overcomes structural "War-Data Gaps" and regional data fragmentation by localizing satellite intelligence to the precise **Sub-County level (Admin 2)** and leveraging Kenya's stable **KHIS/DHIS2** framework for high-fidelity training validation.
+* **vs. Ethiopia's Climate-Sensitive Disease Framework:** Eliminates hardware vulnerabilities. Ethiopia's physical sentinel stations face operational data blackouts during severe weather or local conflict. K-CEWS is entirely **Infrastructure-Independent**, preserving 100% forecasting visibility via remote-sensing NASA satellite telemetry.
+* **vs. South Sudan's WHO EWARS Framework:** Replaces reactive threshold reporting. EWARS triggers only *after* human clinical case confirmation. K-CEWS provides an anticipatory **"Lead-Time Engine"** that flags high-risk statuses 14 days prior to clinical onset, enabling vaccine prepositioning at vital border transit hubs.
+* **vs. Kenya Red Cross sEAP Protocol:** Automates slow, manual observations. The Simplified Early Action Protocol checks physical rain gauges against simple linear thresholds. K-CEWS removes human reporting latency by analyzing multi-variable interactions (heat, rain, humidity, sanitation) simultaneously using machine learning.
+* **vs. Regional Academic ML Studies:** Transitions past "Current Week" tracking models. K-CEWS implements a hardcoded **14-Day Feature Lag** to transform basic descriptive diagnostics into a functional, forward-looking operational forecast.
+
+### **Innovation Matrix**
+
+| Limitation in Previous Work | Historic Context | K-CEWS Strategic Innovation |
+| :--- | :--- | :--- |
+| **Reactive Tracking** | South Sudan / Nigeria | **Anticipatory AI:** Pinned 14-day predictive window for early response. |
+| **Physical Infrastructure Gaps** | Ethiopia / Red Cross | **Satellite Intelligence:** Conflict-proof surveillance via NASA remote sensing. |
+| **Data Fragmentation** | Yemen / Global Projects | **Centralized Dashboard:** Real-time data fusion with automated briefs. |
+| **Academic Isolation** | Research Papers | **Streamlit Command Center:** Production-ready interface for field officers. |
+
+## **3. Data Architecture & Sources**
+
+The platform integrates four distinct environmental and clinical data streams into a continuous geospatial time-series dataset covering 10 years:
+
+| Data Stream | Primary Source | Monitored Parameters | Strategic Value |
 | :--- | :--- | :--- | :--- |
-| **Hydro-Climatic** | NASA POWER | IMERG Precipitation, T2M, RH2M | Identifies environmental "Outbreak Signatures." |
-| **Socio-Demographic** | KNBS / Census | WASH %, Sanitation %, Risk Score | Weighs climate risk against human vulnerability. |
-| **Geospatial** | HDX / OCHA | Admin Level 2 Boundaries | Enables high-resolution sub-county risk mapping. |
-| **Epidemiological** | WHO / ReliefWeb| Clinical Case History (2015-2024) | Provides the "Ground Truth" for AI validation. |
+| **Hydro-Climatic** | NASA POWER API | IMERG Precipitation, Surface Temp, Relative Humidity | Isolates environmental triggers accelerating pathogen growth and water contamination. |
+| **Socio-Demographic** | KNBS / Census Archives | WASH Coverage %, Sanitation Quality, Base Vulnerability Index | Weighs incoming climate triggers against historical localized community vulnerabilities. |
+| **Geospatial Vector** | UN OCHA / HDX Portal | Administrative Level 2 Boundaries (`.geojson`) | Renders precise sub-county mapping boundaries for spatial visualization. |
+| **Epidemiological** | WHO / Health Repositories | Historical Clinical Case Logs | Establishes the definitive historical ground-truth training vector for classification modeling. |
 
----
 
-## 4. Machine Learning & Data Engineering Pipeline
-*(Located in `K-CEWS.ipynb`)*
+## **4. Machine Learning & Data Engineering Pipeline**
 
+The predictive core targets key regional risk zones, specifically highlighting the **Lake Victoria Basin** (Kisumu, Migori counties) and **Nairobi's high-density informal settlements**.
 
+### **Data Engineering Execution**
+* **Chronological Lag Shifts:** Hydro-climatic observations are shifted forward by **14 days** (`.shift(14)`) to align environmental anomalies with biological incubation cycles and clinical reporting rates.
+* **Rolling Structural Windows:** Generates rolling 14-day cumulative averages to detect sustained, high-risk environmental baseline states.
+* **Imbalance Correction (SMOTE):** Addresses heavy dataset skew caused by the low frequency of active cholera outbreaks over time. The pipeline applies Synthetic Minority Over-sampling Technique (SMOTE) strictly within the historical training fold (2015–2019) to prevent model sensitivity from favoring baseline background noise.
 
-The core intelligence evaluates high-risk reservoirs, particularly the **Lake Victoria Basin** (Kisumu, Migori, Homa Bay) and **Nairobi’s informal settlements**.
+### The Evolutionary Tournament: Empirical Model Selection
+To solve the data imbalance challenge, K-CEWS deployed a multi-stage **Evolutionary Tournament**, benchmarking four distinct algorithm families across an out-of-sample validation era consisting of **13,032 rows of unseen historical data (2020–2024)**. Because the public health cost of missing an active transmission window is catastrophic, our primary optimization target was **Class 1 Recall (Sensitivity)**.
 
+| Tournament Stage | Algorithm Family | Outbreak Precision | Outbreak Recall (Sensitivity) | Overall Accuracy | Operational Verdict & Justification |
+| :--- | :--- | :---: | :---: | :---: | :--- |
+| **Stage 1: Baseline** | Negative Binomial GLM | 59.0% | 65.0% | 69.0% | **Failed:** Limited by rigid linear assumptions; missed complex climate interactions. |
+| **Stage 2: Logic** | Decision Tree Classifier | 54.0% | 68.0% | 66.0% | **Failed:** Captured non-linear boundaries but exhibited extreme variance. |
+| **Stage 3: Ensemble** | Random Forest Classifier | **60.0%** | 63.0% | **70.0%** | **Insufficient:** High accuracy, but too conservative to catch rapid outbreak surges. |
+| **Stage 4: Champion** | **Optimized K-CEWS Engine** | 49.0% | **90.0%** | 61.0% | **🏆 WINNER:** Intentionally balanced gradient-boosted architecture. Captures 90% of out-of-sample threats. |
 
+### Overcoming Asymmetric Public Health Risk
+* **Cost-Sensitive Learning:** We implemented an internal cost-sensitive weight multiplier of **3.5** (`scale_pos_weight`) inside our gradient-boosted tree architecture. This mathematically penalizes the objective loss function for false negatives, prioritizing true outbreak windows over standard background variations.
+* **Proactive Surveillance Calibration (35% Threshold):** Rather than using a standard default 50% classification cutoff, the inference layer uses an operational warning threshold of **35% (0.35 probability)**. 
+  * **The Precision Trade-Off (49%):** Roughly half of the alerts may materialize as false alarms, which represents a manageable investment of preventative resources (e.g., distributing water purification tablets during heavy rain).
+  * **The Sensitivity Benefit (90%):** By accepting a lower alert rate, the system successfully intercepts **90% of all out-of-sample epidemiological waves** up to 14 days in advance, directly overcoming the critical reactive lag.
 
-### Data Engineering
 
-* **Temporal Shifting:** Weather variables (precipitation, humidity, temperature) are shifted forward by **14 days** (`shift(14)`) to align environmental triggers with biological incubation.
+## **5. The K-CEWS Interactivity Framework**
 
-* **Rolling Windows:** Incorporates 14-day cumulative rainfall and average temperature.
+### Production Streamlit Command Center (`app.py`)
+A live dashboard built for Sub-County Health Management Teams, featuring:
+* **Dynamic Geotemporal Risk Map:** Renders sub-county administrative boundaries directly on an interactive map, color-coded into Critical, Moderate, and Low risk thresholds.
+* **Logistics Resource Estimator:** An algorithmic calculator that cross-references local population baselines with active risk metrics to estimate real-time logistics needs (e.g., liters of chlorine compound, oral rehydration salt kits).
+* **Environmental Trend Viewer:** Maps continuous 14-day weather changes alongside predicted risk scores to visualize climate-to-risk correlations.
 
-* **Class Balancing (SMOTE):** Addresses the extreme rarity of outbreaks across the 10-year span by creating synthetic outbreak signatures for the training phase.
+### **Executive Analytics Dashboard (Tableau Storytelling)**
+Complementing the web app, the executive [Tableau Dashboard](https://public.tableau.com/app/profile/patience.diana/viz/K-CEWS/Story1) provides comprehensive analytical storytelling workflows, historical outbreak trend comparisons, macro-level risk mapping, and executive briefings tailored for public health decision-makers.
 
 
+## **6. Project Success Metrics**
 
-### Modeling Strategy
+The K-CEWS system is continually audited against strict public health performance standards:
+1. **Empirical Sensitivity (Recall): 90.0%** – Achieved on 13,032 rows of unseen, out-of-sample historical data (2020–2024) to ensure rapid outbreak waves are captured.
+2. **Actionable Horizon: 14 Days** – Delivers a minimum two-week logistics deployment window between environmental alerts and clinical presentation spikes.
+3. **Operational Latency:** Ingests raw automated satellite feeds and renders system-wide geographic risk updates in under 5 minutes.
 
-The system evaluates multiple algorithms to handle epidemiological overdispersion:
 
-1.  **Negative Binomial Regression:** Establishes the baseline.
+## **7. Ethical Considerations & Governance**
 
-2.  **Random Forest Regressor/Classifier:** Evaluates non-linear relationships.
+K-CEWS is engineered to comply fully with the **Kenya Data Protection Act of 2019**:
+* **Structural De-identification:** Functions entirely at the sub-county aggregate layer. No individual patient line-lists, personal identities, or specific household coordinates are processed.
+* **Surveillance Equity:** Integrates baseline demographic indices so that areas with lower clinical reporting rates remain fully visible to the predictive model, preventing regional gaps in resource routing.
 
-3.  **Optimized XGBoost (Production Engine):** Uses `scale_pos_weight=10` to heavily penalize the model for missing an outbreak, prioritizing **100% Outbreak Recall (Sensitivity)**.
 
-4.  **Decision Tree:** provides feature importance rankings and decision pathways that local health teams can understand without AI expertise
 
+## **8. Complete Repository Structure**
 
----
-
-
-
-## 5. The Visual Center (Streamlit App)
-
-*(Located in `app.py`)*
-
-The Streamlit frontend is engineered as a high-availability dashboard for Sub-County Health Management Teams.
-
-[StreamliteApp](https://kenyacholeraearlywarningsystem-hjgbvn8ghqpvex4fcxcykj.streamlit.app/)
-
-### Tableau Storytelling
-Complementing the Streamlit app, the [Tableau Dashboard](https://public.tableau.com/app/profile/patience.diana/viz/K-CEWS/Story1) provides interactive visuals for outbreak trends, climate drivers, and risk scores.
-
-
-
-### Key Features:
-
-* **Live Regional Risk Map:** Interactive Folium map dynamically color-coded by AI risk scores (Critical, Moderate, Low).
-
-* **Medical Logistics Estimator:** An algorithmic calculator that uses baseline risk scores to generate a population proxy, then multiplies it by the live AI Risk Score to estimate required liters of Chlorine and ORS Kits.
-
-* **14-Day Signature Trend:** Visualizes historical 14-day rainfall trends against predicted risk spikes.
-
-* **Automated AI Memos:** Generates downloadable intelligence text reports for rapid sharing.
-
-* **Data Engineering View:** Exposes model tournament results and variable distributions.
-
-
-
----
-
-
-
-## 6. Project Success Metrics
-
-K-CEWS is evaluated against the following benchmarks:
-
-1.  **Statistical Sensitivity (Recall): 1.00 (100%)** - Calibrated to ensure zero missed outbreaks.
-
-2.  **Operational Lead Time: 14 Days** - Minimum two-week warning window for logistics deployment.
-
-3.  **AI Transparency:** Uses a **0.35 Probability Threshold** to flag risks that traditional methods ignore.
-
-4.  **Operational Latency:** Ingests new satellite data and updates forecasts within a 5-minute window.
-
-
-
----
-
-
-
-## 7. Ethical Considerations & Governance
-
-K-CEWS adheres strictly to the **Data Protection Act (2019) of Kenya**:
-
-* **De-identification:** Operates entirely at the Sub-County aggregate level. No individual patient "Line Lists" or GPS coordinates are ingested.
-
-* **Equity:** Incorporates KNBS socio-demographic baselines so that low-reporting rural areas are not "hidden" from the AI.
-
-
-
----
-
-
-
-## 8. Complete Project Structure
-
-
-
-```text
-
-Kenya_Cholera_Early_Warning_System/
+├── image/                             # Logos, documentation assets, and notebook covers
+├── CSV & Data Files/                  # Core data repository (CSV & GeoJSON)
+│   ├── full_geotemporal_data.csv      # Unified master dataset across space and time
+│   ├── Ken_admin2.geojson             # Geographic boundaries for mapping (County/Sub-County)
+│   ├── KCEDW_live_prediction.csv      # Live model outputs and risk predictions
+│   ├── NASA_weather_master.csv        # Compiled historical and live weather features
+│   ├── model_performance_comparison.csv # Evaluation metrics across tested ML models
+│   ├── stakeholder_summary.csv        # Aggregated high-level risk metrics for decision-makers
+│   ├── sub_county_risk_factors.csv    # Granular vulnerability and risk weights
+│   │
+│   ├── historical_test_datasets.csv   # Baseline evaluation datasets
+│   ├── train_Nairobi.csv              # Training data - Nairobi
+│   ├── train_Kisumu.csv               # Training data - Kisumu
+│   ├── train_Migori.csv               # Training data - Migori
+│   ├── test_Nairobi.csv               # Testing data - Nairobi
+│   ├── test_Kisumu.csv                # Testing data - Kisumu
+│   ├── test_Migori.csv                # Testing data - Migori
+│   ├── live_Nairobi.csv               # Real-time inference data - Nairobi
+│   ├── live_Kisumu.csv                # Real-time inference data - Kisumu
+│   └── live_Migori.csv                # Real-time inference data - Migori
 │
-├── app.py                              # Streamlit Command Center Application
-├── K-CEWS.ipynb                        # Master Data Engineering & ML Pipeline
-├── requirements.txt                    # Python dependencies
-├── README.md                           # Project documentation
-├── .gitignore                          # Git ignore rules
-│
-├── Image/
-│   └── coverImg.png                    # Dashboard/Project cover imagery
-│
-└── csv/                                # Comprehensive Data Repository
-    ├── full_geotemporal_dataset.csv    # Final engineered dataset (Notebook output)
-    ├── kcews_live_predictions.csv      # Main prediction outputs driving Streamlit app
-    ├── ken_admin2.geojson              # Spatial mapping data for Folium
-    ├── model_performance_comparison.csv# Algorithm tournament evaluation metrics
-    ├── subcounty_risk_factors.csv      # KNBS Baseline WASH/Epi risk scores
-    ├── historical_test_dataset.csv     # Historical baseline for evaluation
-    ├── stakeholder_summary.csv         # High-level data for stakeholder reporting
-    ├── NASA_Weather_Master.csv         # Consolidated historical weather data
-    ├── Train_*_raw.csv                 # Raw training data sets (Nairobi, Migori, Kisumu)
-    ├── Test_*.csv                      # Isolated testing data sets
-    └── live_*.csv                      # Live/Recent data feeds
+├── .gitignore                         # Standard git exclusion configurations
+├── app.py                             # Core script for the Streamlit web application
+├── Notebook.ipynb                     # End-to-end data science pipeline (EDA to Modeling)
+├── Presentation.pdf                   # Stakeholder and project pitch deck
+├── README.md                          # Project documentation (This file)
+└── requirements.txt                   # Application dependencies and Python packages
 
-```
+## **9. Project Team & Task Force**
 
----
+The **Kenya Cholera Early Warning System (K-CEWS)** was engineered and deployed by a dedicated cross-functional task force from **Moringa School, Nairobi, Kenya**, bringing together expertise across data engineering, predictive modeling, geospatial analysis, and user-experience design.
 
-## 9. project-team
+### **Task Force Breakdown**
 
-**Role & Core Responsibility**
-
-* **Abel Aleu Chol Garang** - Project Lead & UI Developer|"Project architecture, Streamlit deployment, UI/UX logic."
-
-* **Augustine Magani** - Technical Researcher,"Data sourcing, literature review, technical documentation."
-
-* **Patience Chepkosgei** - Data Analyst,Exploratory Data Analysis (EDA) and Tableau Storytelling.
-
-* **Carolyne Githenduka** - Data Engineer,"ETL processes, data cleaning, 14-day feature lagging."
-
-* **Marcus Kaula** - Machine Learning Engineer,"Lead modeler (Negative Binomial, Random Forest, XGBoost)."
+| Name & Profile | Strategic Project Role | Core Architectural Responsibilities |
+| :--- | :--- | :--- |
+| **Abel Aleu Chol Garang** | **Project Lead & UI Developer** | Overall system architecture layout, end-to-end multi-page session state management, and implementation of the Streamlit live command dashboard interface. |
+| **Augustine Magani** | **Technical Researcher** | Strategic data sourcing, historic case literature benchmarking, global framework review, and statutory public policy documentation. |
+| **Patience Chepkosgei** | **Data Analyst** | Comprehensive geospatial exploratory data profiling, feature-to-target mapping, and orchestration of the interactive executive Tableau Storyboard. |
+| **Carolyne Githenduka** | **Data Engineer** | Automated extraction pipelines for raw NASA weather files, data cleaning layers, and implementation of the critical $t-14$ chronological feature lag shifts. |
+| **Marcus Kaula** | **Machine Learning Engineer** | Construction of the model evaluation tournament framework across all four analytical families, synthetic data balancing (SMOTE), and XGBoost champion engine tuning. |
