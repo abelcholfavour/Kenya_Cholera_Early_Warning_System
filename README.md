@@ -1,7 +1,7 @@
 # Kenya Cholera Early Warning System (K-CEWS)
 **AI-Driven Predictive Surveillance for Proactive Sub-County Intervention**
 
-![K-CEWS Cover](image/coverImg.png)
+![K-CEWS Cover](Image/coverImg.png)
 
 > *Transitioning clinical workflows from a state of reactive crisis response to proactive, anticipatory mitigation. A 14-day structural head start turns emergency logistics into a calculated containment strategy.*
 
@@ -118,36 +118,35 @@ K-CEWS is engineered to comply fully with the **Kenya Data Protection Act of 201
 
 
 
-## **8. Complete Repository Structure**
+## 8. Complete Repository Structure
 
-├── image/                             # Logos, documentation assets, and notebook covers
-├── CSV & Data Files/                  # Core data repository (CSV & GeoJSON)
-│   ├── full_geotemporal_data.csv      # Unified master dataset across space and time
-│   ├── Ken_admin2.geojson             # Geographic boundaries for mapping (County/Sub-County)
-│   ├── KCEDW_live_prediction.csv      # Live model outputs and risk predictions
-│   ├── NASA_weather_master.csv        # Compiled historical and live weather features
-│   ├── model_performance_comparison.csv # Evaluation metrics across tested ML models
-│   ├── stakeholder_summary.csv        # Aggregated high-level risk metrics for decision-makers
-│   ├── sub_county_risk_factors.csv    # Granular vulnerability and risk weights
-│   │
-│   ├── historical_test_datasets.csv   # Baseline evaluation datasets
-│   ├── train_Nairobi.csv              # Training data - Nairobi
-│   ├── train_Kisumu.csv               # Training data - Kisumu
-│   ├── train_Migori.csv               # Training data - Migori
-│   ├── test_Nairobi.csv               # Testing data - Nairobi
-│   ├── test_Kisumu.csv                # Testing data - Kisumu
-│   ├── test_Migori.csv                # Testing data - Migori
-│   ├── live_Nairobi.csv               # Real-time inference data - Nairobi
-│   ├── live_Kisumu.csv                # Real-time inference data - Kisumu
-│   └── live_Migori.csv                # Real-time inference data - Migori
-│
-├── .gitignore                         # Standard git exclusion configurations
-├── app.py                             # Core script for the Streamlit web application
-├── Notebook.ipynb                     # End-to-end data science pipeline (EDA to Modeling)
-├── Presentation.pdf                   # Stakeholder and project pitch deck
-├── README.md                          # Project documentation (This file)
-└── requirements.txt                   # Application dependencies and Python packages
-
+```text
+Kenya_Cholera_Early_Warning_System/
+├── image/                                # Logos, documentation assets, and notebook covers
+├── CSV & Data Files/                     # Core data repository (CSV & GeoJSON)
+│   ├── full_geotemporal_data.csv         # Unified master dataset across space and time
+│   ├── Ken_admin2.geojson                # Geographic boundaries for mapping (County/Sub-County)
+│   ├── KCEDW_live_prediction.csv         # Live model outputs and risk predictions
+│   ├── NASA_weather_master.csv           # Compiled historical and live weather features
+│   ├── model_performance_comparison.csv  # Evaluation metrics across tested ML models
+│   ├── stakeholder_summary.csv           # Aggregated high-level risk metrics for decision-makers
+│   ├── sub_county_risk_factors.csv       # Granular vulnerability and risk weights
+│   ├── historical_test_datasets.csv      # Baseline evaluation datasets
+│   ├── train_Nairobi.csv                 # Training data - Nairobi
+│   ├── train_Kisumu.csv                  # Training data - Kisumu
+│   ├── train_Migori.csv                  # Training data - Migori
+│   ├── test_Nairobi.csv                  # Testing data - Nairobi
+│   ├── test_Kisumu.csv                   # Testing data - Kisumu
+│   ├── test_Migori.csv                   # Testing data - Migori
+│   ├── live_Nairobi.csv                  # Real-time inference data - Nairobi
+│   ├── live_Kisumu.csv                   # Real-time inference data - Kisumu
+│   └── live_Migori.csv                   # Real-time inference data - Migori
+├── .gitignore                            # Standard git exclusion configurations
+├── app.py                                # Core script for the Streamlit web application
+├── Notebook.ipynb                        # End-to-end data science pipeline (EDA to Modeling)
+├── Presentation.pdf                      # Stakeholder and project pitch deck
+├── README.md                             # Project documentation (This file)
+└── requirements.txt                      # Application dependencies and Python packages
 ## **9. Project Team & Task Force**
 
 The **Kenya Cholera Early Warning System (K-CEWS)** was engineered and deployed by a dedicated cross-functional task force from **Moringa School, Nairobi, Kenya**, bringing together expertise across data engineering, predictive modeling, geospatial analysis, and user-experience design.
